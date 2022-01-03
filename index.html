@@ -11,21 +11,27 @@
         <h1>FFXIV Critical and Direct Hit Calculator</h1>
         <label>Level</label>
         <input type="number" id="level" min="1" max="90" />
+        <button id="maxLevel">Max</button>
         <section class="criticalHit">
             <h2>Critical Hit</h2>
             <label>Critical Hit</label>
             <input type="number" id="crit" min="1" />
-            <p class="critResult"></p>
+            <button id="critButton">Critical Hit</button>
+            <p class="criticalHit-result">
+                Critcal Hit %:
+                <span class="crit-result_percent"></span> Critical Hit Strength:
+                <span class="crit-result_strength"></span>
+            </p>
         </section>
         <section class="directHit">
             <h2>Direct Hit</h2>
             <label>Direct Hit</label>
             <input type="number" id="dh" min="1" />
-            <p class="directHitResult"></p>
+            <p class="directHit-result"></p>
         </section>
-        <section class="criticalDirectHit">
+        <section class="cdh">
             <h2>Critical Direct Hit</h2>
-            <p class="critDirResult">10000%</p>
+            <p class="cdh_result">10000%</p>
         </section>
     </body>
 </html>
