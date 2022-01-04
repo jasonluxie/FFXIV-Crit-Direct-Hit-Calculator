@@ -1,4 +1,4 @@
-import levelData from "./levelData";
+import levelData from "../src/levelData";
 const maxLevelButton = document.getElementById("maxLevel");
 const critButton = document.getElementById("critButton");
 
