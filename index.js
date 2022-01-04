@@ -20,5 +20,5 @@ const critCalculator = () => {
   critResultPercent.value = critRate
   critResultStrength.value = critStrength
 };
-critButton.addEventListener("click", critCalculator);
+// critButton.addEventListener("click", critCalculator);
 maxLevelButton.addEventListener("click", setMaxLevel);
