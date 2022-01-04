@@ -1,10 +1,11 @@
-// import levelData from './levelData'
+import levelData from "./levelData";
 const maxLevelButton = document.getElementById("maxLevel");
 const critButton = document.getElementById("critButton");
 
 const setMaxLevel = () => {
     const levelForm = document.getElementById("level");
     levelForm.value = 90;
+    console.log(levelData)
 };
 
 const critCalculator = () => {
