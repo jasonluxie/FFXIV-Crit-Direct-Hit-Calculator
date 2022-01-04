@@ -1,0 +1,23 @@
+{
+  "name": "FFXIV-Crit-Direct-Hit-Calculator",
+  "version": "1.0.0",
+  "description": "Critical and Direct Hit calculator for FFXIV.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonluxie/FFXIV-Crit-Direct-Hit-Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonluxie/FFXIV-Crit-Direct-Hit-Calculator/issues"
+  },
+  "homepage": "https://github.com/jasonluxie/FFXIV-Crit-Direct-Hit-Calculator#readme",
+  "dependencies": {
+    "create-react-app": "^5.0.0"
+  }
+}
