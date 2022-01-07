@@ -1,10 +1,11 @@
 import Banner from "./components/Banner";
 import Form from "./components/Form";
 import React, { useState } from "react";
+import { useEffect } from "react";
 import levelData from "./levelData";
 
 function App() {
-    const [level, setLevel] = useState(1);
+    const [level, setLevel] = useState(90);
     const [playerCrit, setPlayerCrit] = useState(0);
     const [playerDH, setplayerDH] = useState(0);
 
@@ -22,12 +23,26 @@ function App() {
         return [critPercent, critStrength];
     };
 
+    useEffect(() => {
+        critCalculator(level, playerCrit);
+    }, [level, playerCrit]);
+
     return (
         <div className="App">
             <Banner />
-            <Form type="level" level={level} setLevel={setLevel}/>
-            <Form type="crit" calculator={critCalculator}/>
-            <Form type="directHit" />
+            <Form
+                type="level"
+                level={level}
+                setLevel={setLevel}
+                levelData={levelData.level[0].sub}
+            />
+            {/* <Form
+                type="crit"
+                playerCrit={playerCrit}
+                setPlayerCrit={setPlayerCrit}
+                calculator={critCalculator}
+            />
+            <Form type="directHit" /> */}
         </div>
     );
 }

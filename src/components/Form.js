@@ -14,12 +14,14 @@ function Form(props) {
                 <h2>Critical Hit</h2>
                 <label>Critical Hit </label>
                 <input type="number" id="crit" min="1" />
-                <button id="critButton">Critical Hit</button>
+                <button id="critButton">Submit</button>
                 <p class="criticalHit-result">
                     Critcal Hit %:
-                    <span class="crit-result_percent"></span> Critical Hit
-                    Strength:
-                    <span class="crit-result_strength"></span>
+                    <span class="crit-result_percent">
+                    </span> 
+                    Critical Hit Strength:
+                    <span class="crit-result_strength">
+                    </span>
                 </p>
             </section>
         );
